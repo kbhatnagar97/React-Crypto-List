@@ -69,7 +69,7 @@ const List = ({searchText}: IProps) => {
                       ? styles.greenText
                       : styles.redText
                   }>
-                  {coin?.item.percent_change_24h > 0 ? '+' : '-'}
+                  {coin?.item.percent_change_24h > 0 ? '+' : ''}
                   {coin?.item.percent_change_24h}%
                 </Text>
                 <Text style={styles.textPrice}>$ {coin?.item.price_usd}</Text>
